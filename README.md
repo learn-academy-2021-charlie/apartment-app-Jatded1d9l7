@@ -38,4 +38,11 @@ $ rails db:migrate
     $ rails generate react:install
     $ rails generate react:component App
     $ rails generate controller Home
+- Created index.hmtl.erb in the view folder for home
+- Call react component in index.html.erb
+- Added root in routes file
+- Passed in devise info to App.js
+- $ yarn add react-router-dom
+- Configured the devise signout route to be a get request
+- Checked the sign in and sign out routes with conditional rendering
 
