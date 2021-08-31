@@ -13,14 +13,22 @@ Things you may want to cover:
 * ...
 
 * Initial commands to create app:
-$ rails new apartment_app -d postgresql -T
-$ cd apartment_app
-$ rails db:create
-$ bundle add rspec-rails
-$ rails generate rspec:install
-$ bundle add devise
-$ rails generate devise:install
-$ rails generate devise User
-$ rails db:migrate (aborted) !needs to be resolved!
+    $ rails new apartment_app -d postgresql -T
+    $ cd apartment_app
+    $ rails db:create
+    $ bundle add rspec-rails
+    $ rails generate rspec:install
+    $ bundle add devise
+    $ rails generate devise:install
+    $ rails generate devise User
+    $ rails db:migrate (aborted) !needs to be resolved!
+
+* Next I, Set up the default URL options for Devise mailer:
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+* Then I ran the following code to create my appartment model.
+$ rails g resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string user_id:integer
+
+$ rails db:migrate
 
 
