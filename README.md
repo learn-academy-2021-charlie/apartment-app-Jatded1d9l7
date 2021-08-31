@@ -31,4 +31,11 @@ $ rails g resource Apartment street:string city:string state:string manager:stri
 
 $ rails db:migrate
 
+* Next- Setting up React components:
+    $ bundle add react-rails
+    $ rails webpacker:install
+    $ rails webpacker:install:react
+    $ rails generate react:install
+    $ rails generate react:component App
+    $ rails generate controller Home
 
