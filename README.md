@@ -23,6 +23,9 @@ Things you may want to cover:
     $ rails generate devise User
     $ rails db:migrate (aborted) !needs to be resolved!
 
+* set up remote to GitHub: 
+* create a new branch 
+
 * Next I, Set up the default URL options for Devise mailer:
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
