@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../components/assets/945196.jpg'
 
 class Header extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     const {
       logged_in,
@@ -14,7 +12,7 @@ class Header extends Component {
     return (
       <header>
         <NavLink to="/">
-          <img src='../assets/apartment-app.png' alt="apartment app logo" className="logo"/>
+          <img src={logo} alt="apartment app logo" className="logo"/>
         </NavLink>
         <div className="nav-bar">
           <ul>
@@ -26,6 +24,11 @@ class Header extends Component {
             }
             {!logged_in &&
               <a href={sign_in_route} className="nav-link">Sign In</a>
+            }
+          </ul>
+          <ul>
+            {logged_in &&
+              <NavLink to="/apartmentNew" className="nav-link">Add an Apartment</NavLink>
             }
           </ul>
         </div>
