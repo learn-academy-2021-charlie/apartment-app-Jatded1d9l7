@@ -40,3 +40,4 @@ first_user = User.where(email: 'testing@test.com').first
 apartments.each do |attribute|
   first_user.apartments.create attribute
 end
+

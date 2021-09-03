@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../components/assets/945196.jpg'
+import logo from '../components/assets/stack.png'
 
 class Header extends Component {
   render() {
@@ -12,11 +12,11 @@ class Header extends Component {
     return (
       <header>
         <NavLink to="/">
-          <img src={logo} alt="apartment app logo" className="logo"/>
+          <img src={logo} alt="Stack Logo" className="logo"/>
         </NavLink>
         <div className="nav-bar">
           <ul>
-            <NavLink to="/apartmentIndex" className="nav-link">See All the Apartments</NavLink>
+            <NavLink to="/apartmentIndex" className="nav-link">Checkout the Apartments</NavLink>
           </ul>
           <ul>
             {logged_in &&

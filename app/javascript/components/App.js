@@ -21,7 +21,7 @@ class App extends Component {
     this.readApartment()
   }
   readApartment = () => {
-    fetch("/apartments")
+    fetch("http://localhost:3000/apartments")
     .then(response => response.json())
     .then(payload => this.setState({apartments: payload}))
     .catch(errors => console.log("index errors:", errors))
