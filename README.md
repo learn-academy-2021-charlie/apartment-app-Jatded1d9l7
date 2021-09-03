@@ -38,4 +38,6 @@ $ rails db:migrate
     $ rails generate react:install
     $ rails generate react:component App
     $ rails generate controller Home
+* added custom logo to assets file
+* Created ApartmentNew.js component
 

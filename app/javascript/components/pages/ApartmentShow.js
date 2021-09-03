@@ -8,4 +8,6 @@ class ApartmentShow extends React.Component {
     }
 }
 
+
+
 export default ApartmentShow
